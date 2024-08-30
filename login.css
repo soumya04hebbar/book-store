@@ -1,0 +1,83 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    background: url('log.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em; /* Make the heading big */
+    color: white; /* Set the heading color to white */
+    margin-bottom: 20px; /* Space between the heading and the form */
+}
+
+.login-container {
+    background: rgba(66, 66, 66, 0.7); /* Background color with 70% opacity */
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(161, 150, 150, 0.1);
+    display: inline-block; /* Center the container */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white; /* Set label text color to white */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #333; /* Input text color, set to dark for contrast */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.register-link {
+    color: #3498db; /* Set the link color to match the button */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

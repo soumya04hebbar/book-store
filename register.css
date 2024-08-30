@@ -1,0 +1,93 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    overflow: hidden; /* Prevents scrollbars from appearing due to pseudo-element */
+}
+
+.main-container {
+    position: relative;
+    text-align: center;
+    z-index: 1; /* Ensures the form container is above the blurred background */
+}
+
+/* Pseudo-element for blurred background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('review.jpg') no-repeat center center/cover;
+    filter: blur(8px); /* Adjust the blur level as needed */
+    z-index: -1; /* Places the pseudo-element behind the content */
+}
+
+h1 {
+    font-size: 4em; /* Make the heading big */
+    color: white; /* Set the heading color to white */
+    margin-bottom: 20px; /* Space between the heading and the form */
+}
+
+.register-container {
+    background: rgba(66, 66, 66, 0.7); /* Background color with 70% opacity */
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(161, 150, 150, 0.1);
+    display: inline-block; /* Center the container */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white; /* Set label text color to white */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #333; /* Input text color, set to dark for contrast */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.login-link {
+    color: #3498db; /* Set the link color to match the button */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

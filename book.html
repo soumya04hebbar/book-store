@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Catalog</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Bookstore</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Discover Your Next Favorite Book</h1>
+        <p>Explore our collection and find your perfect read.</p>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section id="search-filter" class="search-filter">
+        <input type="text" id="search" placeholder="Search by title or author">
+        <select id="genre-filter">
+            <option value="">Select Genre</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="biography">Biography</option>
+            <option value="mystery">Mystery</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+        </select>
+        <input type="date" id="pub-date-filter">
+        <button id="search-btn">Search</button>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section id="books" class="featured-books">
+        <h2>Featured Books</h2>
+        <div class="book-list">
+            <!-- Dynamic book list items will be inserted here -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Bookstore, your number one source for all things books. We're dedicated to providing you the very best of literature, with an emphasis on customer service, accessibility, and a wide selection of books.</p>
+        <p>Founded in 2024, Bookstore has come a long way from its beginnings. When we first started, our passion for books drove us to start our own business.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Book Details Modal -->
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                <!-- Detailed book info will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bookstore Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="book.js"></script>
+</body>
+</html>
